@@ -17,7 +17,7 @@ seed_provider:
           # In an existing cluster, specify the address of at least one existing node.
           # If you specify addresses of more than one node, use a comma to separate them.
           # For example: "<IP1>,<IP2>,<IP3>"
-          - seeds: "127.0.0.1"
+          - seeds: "::1"
 
 # Address to bind to and tell other Scylla nodes to connect to.
 # You _must_ change this if you want multiple nodes to be able to communicate!
