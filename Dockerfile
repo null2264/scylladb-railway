@@ -1,4 +1,4 @@
-FROM scylladb/scylla
+FROM scylladb/scylla:5.1.4
 
 ARG SEEDS
 ARG SMP
