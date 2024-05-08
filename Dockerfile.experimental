@@ -1,0 +1,11 @@
+# We use 5.1.4 specifically because newer version have broken IPv6 support
+# REF: https://github.com/scylladb/scylladb/issues/14738
+FROM scylladb/scylla:5.1.4
+
+COPY wrapper.sh /usr/local/bin/wrapper.sh
+
+RUN chmod +x /usr/local/bin/wrapper.sh
+
+ENTRYPOINT ["wrapper.sh"]
+
+CMD ["scylladb"]
