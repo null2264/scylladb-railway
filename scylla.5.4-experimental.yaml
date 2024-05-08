@@ -1,0 +1,8 @@
+data_file_directories:
+    - /var/lib/scylla/data
+commitlog_directory: /var/lib/scylla/commitlog
+seed_provider:
+    - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+      parameters:
+        - seeds: "::"
+enable_ipv6_dns_lookup: true
