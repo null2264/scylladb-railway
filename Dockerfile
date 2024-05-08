@@ -1,3 +1,4 @@
+# DEPRECATED: Please use the versioned Dockerfile(s) instead!
 FROM scylladb/scylla:5.1.4
 
 ARG SEEDS
