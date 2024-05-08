@@ -6,6 +6,6 @@ COPY wrapper.sh /usr/local/bin/wrapper.sh
 
 RUN chmod +x /usr/local/bin/wrapper.sh
 
-ENTRYPOINT ["wrapper.sh"]
+ENTRYPOINT ["/usr/local/bin/wrapper.sh"]
 
 CMD ["scylladb"]
