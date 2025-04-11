@@ -14,6 +14,4 @@ LISTEN_ADDR="${LISTEN_ADDR:-::}"
 	--overprovisioned "$OVERPROV" \
 	--api-address "$API_ADDR" \
 	--listen-address "$LISTEN_ADDR" \
-	--rpc-address "$LISTEN_ADDR" \
-	--alternator-address "$LISTEN_ADDR" \
 	"$@"
