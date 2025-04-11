@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        dockerfile: ['Dockerfile.5.1.4-experimental', 'Dockerfile.5.1.4-v2', 'Dockerfile.5.4-experimental' ]
+        dockerfile: ['Dockerfile.5.1.4-experimental', 'Dockerfile.5.1.4-v2', 'Dockerfile.2025.1-experimental' ]
 
     steps:
       - name: Checkout sources

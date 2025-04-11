@@ -1,7 +1,7 @@
-FROM scylladb/scylla:5.4
+FROM scylladb/scylla:2025.1
 
 COPY wrapper.sh /usr/local/bin/wrapper.sh
-COPY scylla.5.4-experimental.yaml /etc/scylla/scylla.yaml
+#COPY scylla.5.4-experimental.yaml /etc/scylla/scylla.yaml
 
 RUN chmod +x /usr/local/bin/wrapper.sh
 
