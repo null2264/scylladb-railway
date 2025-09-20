@@ -4,7 +4,7 @@ FROM scylladb/scylla:2025.2
 USER root
 RUN microdnf clean all
 RUN microdnf --setopt=tsflags=nodocs -y update
-RUN microdnf --setopt=tsflags=nodocs -y install gettext-envsubst
+RUN microdnf --setopt=tsflags=nodocs -y install gettext
 RUN microdnf clean all
 USER scylla
 
