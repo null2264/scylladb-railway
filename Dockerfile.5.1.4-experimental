@@ -3,6 +3,9 @@
 FROM scylladb/scylla:5.1.4
 
 # For 'envsubst'
+RUN apt-get -y clean expire-cache
+RUN apt-get -y update
+RUN apt-get -y upgrade
 RUN apt-get -y install gettext
 
 COPY wrapper.sh /usr/local/bin/wrapper.sh

@@ -1,6 +1,9 @@
 FROM scylladb/scylla:2025.1
 
 # For 'envsubst'
+RUN apt-get -y clean expire-cache
+RUN apt-get -y update
+RUN apt-get -y upgrade
 RUN apt-get -y install gettext
 # RUN microdnf --setopt=tsflags=nodocs -y install gettext-envsubst
 
