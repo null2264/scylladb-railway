@@ -3,6 +3,7 @@
 FROM scylladb/scylla:5.1.4
 
 COPY wrapper.sh /usr/local/bin/wrapper.sh
+COPY scylla.yaml /etc/scylla/scylla.template.yaml
 
 RUN chmod +x /usr/local/bin/wrapper.sh
 
