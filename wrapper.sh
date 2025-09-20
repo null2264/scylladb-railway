@@ -14,7 +14,7 @@ LISTEN_ADDR="${LISTEN_ADDR:-$API_ADDR}"
 #region Environment variables' default values
 export SEEDS="${SEEDS:-'::'}"
 export AUTH_SUPERUSER_NAME="${AUTH_SUPERUSER_NAME:-cassandra}"
-export AUTH_SUPERUSER_SHA512_PASSWORD="${AUTH_SUPERUSER_SHA512_PASSWORD:-'$6$F8lPuHbSJMBziP.y$vv2dB7URHQrOq4UTNpMrKfHbN7nw6wba6dnEzSUqKKvW.hPRGz/9v1rB47uqtJoPKciIAoq/L9OYw3UxvNw.y.'}"
+export AUTH_SUPERUSER_SHA512_PASSWORD="${AUTH_SUPERUSER_SHA512_PASSWORD:-\$6\$F8lPuHbSJMBziP.y\$vv2dB7URHQrOq4UTNpMrKfHbN7nw6wba6dnEzSUqKKvW.hPRGz/9v1rB47uqtJoPKciIAoq/L9OYw3UxvNw.y.}"
 #endregion
 
 if [ -e "/etc/scylla/scylla.template.yaml" ]; then
