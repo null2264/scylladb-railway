@@ -2,6 +2,9 @@
 # REF: https://github.com/scylladb/scylladb/issues/14738
 FROM scylladb/scylla:5.1.4
 
+# For 'envsubst'
+RUN apk update && apk add gettext
+
 COPY wrapper.sh /usr/local/bin/wrapper.sh
 COPY scylla.yaml /etc/scylla/scylla.template.yaml
 
