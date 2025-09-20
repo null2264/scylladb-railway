@@ -1,10 +1,8 @@
 FROM scylladb/scylla:2025.2
 
 # For 'envsubst'
-RUN microdnf clean all
 RUN microdnf --setopt=tsflags=nodocs -y update
 RUN microdnf --setopt=tsflags=nodocs -y install gettext-envsubst
-RUN microdnf clean all
 
 COPY wrapper.sh /usr/local/bin/wrapper.sh
 COPY scylla.yaml /etc/scylla/scylla.template.yaml
