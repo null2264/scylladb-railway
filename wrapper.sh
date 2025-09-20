@@ -19,6 +19,7 @@ export AUTH_SUPERUSER_SHA512_PASSWORD="${AUTH_SUPERUSER_SHA512_PASSWORD:-'$6$F8l
 
 if [ -e "/etc/scylla/scylla.template.yaml" ]; then
 	envsubst < "/etc/scylla/scylla.template.yaml" > "/etc/scylla/scylla.yaml"
+	cat "/etc/scylla/scylla.yaml"
 fi
 
 /docker-entrypoint.py \
