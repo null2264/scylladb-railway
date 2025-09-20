@@ -7,6 +7,7 @@ RUN apt-get -y clean expire-cache
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get -y install gettext
+RUN apt-get -y clean all
 
 COPY wrapper.sh /usr/local/bin/wrapper.sh
 COPY scylla.yaml /etc/scylla/scylla.template.yaml
